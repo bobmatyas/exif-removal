@@ -1,15 +1,15 @@
 <?php
 /**
- * Plugin Name:     EXIF Removal
+ * Plugin Name:     EXIF Remover
  * Description:     Removes EXIF data from image uploads
  * Author:          Bob Matyas
  * Author URI:      https://www.bobmatyas.com
- * Text Domain:     exif-removal
+ * Text Domain:     exif-remover
  * Version:         1.0.0
  * License:         GPL-2.0-or-later
  * License URI:     https://www.gnu.org/licenses/gpl-2.0.html
  *
- * @package         EXIF_Removal
+ * @package         EXIF_Remover
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -60,7 +60,7 @@ add_action(
 
 				if ( $image ) {
 					try {
-						// Check image orientation using EXIF data.
+						// Preserve image orientation.
 						$exif = exif_read_data( $filename );
 						if ( ! empty( $exif['Orientation'] ) ) {
 							switch ( $exif['Orientation'] ) {
