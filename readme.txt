@@ -38,7 +38,7 @@ It should as long as your host has the Imagick or GD libraries installed. I have
 
 == Changelog ==
 
-= 1.0.2 =
+= 1.0.2 - 11/28/25 =
 - Indicate compatibility with WordPress v6.9
 - Switch from `add_action` to `add_filter`
 
