@@ -1,10 +1,10 @@
 === EXIF Remover ===
 Contributors: lastsplash
 Tags: exif, images
-Requires at least: 6.5
-Tested up to: 6.8.1
-Requires PHP: 7.4
-Stable tag: 1.0.1
+Requires at least: 6.8
+Tested up to: 6.9
+Requires PHP: 8.2
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,7 +38,11 @@ It should as long as your host has the Imagick or GD libraries installed. I have
 
 == Changelog ==
 
-= 1.0.01 =
+= 1.0.2 =
+- Indicate compatibility with WordPress v6.9
+- Switch from `add_action` to `add_filter`
+
+= 1.0.1 =
 - Indicate compatibility with WordPress v6.8.x
 - Add plugin icon
 
