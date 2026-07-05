@@ -50,7 +50,7 @@ add_filter(
 					$image->destroy();
 				} catch ( Exception $e ) {
 					if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
-						// phpcs:ignore WordPress.Security.Debug.Log
+						// phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log
 						error_log( 'Unable to strip EXIF data with Imagick: ' . $filename );
 					}
 				}
@@ -79,7 +79,7 @@ add_filter(
 						imagedestroy( $image );
 					} catch ( Exception $e ) {
 						if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
-							// phpcs:ignore WordPress.Security.Debug.Log
+							// phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log
 							error_log( 'Unable to read EXIF data via GD for: ' . $filename . ' - ' . $e->getMessage() );
 						}
 					}
