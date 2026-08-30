@@ -5,7 +5,7 @@
  * Author:          Bob Matyas
  * Author URI:      https://www.bobmatyas.com
  * Text Domain:     exif-remover
- * Version:         1.0.3
+ * Version:         1.0.4
  * Requires at least: 6.9
  * Tested up to:      7.0
  * License:         GPL-2.0-or-later
